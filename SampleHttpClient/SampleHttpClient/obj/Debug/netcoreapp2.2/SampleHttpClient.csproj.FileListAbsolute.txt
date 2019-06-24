@@ -1,0 +1,11 @@
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\bin\Debug\netcoreapp2.2\SampleHttpClient.deps.json
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\bin\Debug\netcoreapp2.2\SampleHttpClient.runtimeconfig.json
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\bin\Debug\netcoreapp2.2\SampleHttpClient.runtimeconfig.dev.json
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\bin\Debug\netcoreapp2.2\SampleHttpClient.dll
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.csprojAssemblyReference.cache
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.csproj.CoreCompileInputs.cache
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.AssemblyInfoInputs.cache
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.AssemblyInfo.cs
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\bin\Debug\netcoreapp2.2\SampleHttpClient.pdb
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.dll
+D:\GitHub\SampleWebApi\SampleHttpClient\SampleHttpClient\obj\Debug\netcoreapp2.2\SampleHttpClient.pdb

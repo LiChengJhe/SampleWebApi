@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
+using SampleWebApi.Models;
 
 namespace SampleWebApi.Controllers
 {
@@ -27,12 +28,11 @@ namespace SampleWebApi.Controllers
         }
 
         [Route("{id}"), HttpGet]
-        public ActionResult<List<Customer>> GetCustomers(string  id )
+        public ActionResult<Customer> GetCustomer(string  id )
         {
             try
             {
-                throw new Exception("12312");
-                return Ok(_Customers.Where(o => o.Id == id));
+                return Ok(_Customers.Find(o => o.Id == id));
             }
             catch(Exception ex) {
                 return StatusCode(StatusCodes.Status500InternalServerError,new{ detail= ex.Message});

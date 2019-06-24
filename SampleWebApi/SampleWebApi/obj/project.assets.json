@@ -12940,11 +12940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\SampleWebApi.csproj",
+      "projectUniqueName": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\SampleWebApi\\SampleWebApi.csproj",
       "projectName": "SampleWebApi",
-      "projectPath": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\SampleWebApi.csproj",
+      "projectPath": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\SampleWebApi\\SampleWebApi.csproj",
       "packagesPath": "C:\\Users\\chengjheli\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\obj\\",
+      "outputPath": "D:\\GitHub\\SampleWebApi\\SampleWebApi\\SampleWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
