@@ -1,0 +1,218 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="show">
+
+</div>
+
+
+
+@section Scripts{
+    <script type="text/javascript">
+        //$(document).ready(function () {
+        //    // Fetch API
+        //    let $show = $('#show');
+        //    let url = 'https://localhost:44359/customer'
+        //    let result = '';
+        //    // Get
+        //      fetch(url, {
+        //          method: 'GET',
+        //          headers: new Headers({
+        //              'Content-Type': 'application/json'
+        //          })
+        //      }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //         result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+        //    fetch(url + '/A54A', {
+        //        method: 'GET',
+        //        headers: new Headers({
+        //            'Content-Type': 'application/json'
+        //        })
+        //    }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //         result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+
+        //    //Post
+        //    fetch(url, {
+        //        method: 'POST',
+        //        body: JSON.stringify({ 'Id': 'test-1', Name: 'test-1', Location: 'tw' }),
+        //        headers: new Headers({
+        //            'Content-Type': 'application/json'
+        //        })
+        //    }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //         result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+
+        //    //Put
+        //    fetch(url + '/A54A', {
+        //        method: 'PUT',
+        //        body: JSON.stringify({ Id: 'A54A', Name: 'changed', Location: 'changed' }),
+        //        headers: new Headers({
+        //            'Content-Type': 'application/json'
+        //        })
+        //    }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //        result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+
+        //    //Patch
+        //     fetch(url + '/A54A', {
+        //        method: 'PATCH',
+        //        body: JSON.stringify({ Location: 'changed' }),
+        //        headers: new Headers({
+        //            'Content-Type': 'application/json'
+        //        })
+        //    }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //        result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+
+        //    //Delete
+        //    fetch(url + '/A54A', {
+        //        method: 'DELETE',
+        //        headers: new Headers({
+        //            'Content-Type': 'application/json'
+        //        })
+        //    }).then(res => res.json())
+        //      .then(response => {
+        //            result += JSON.stringify(response) + '<br />';
+        //            $show.html(result);
+        //      })
+        //      .catch(error => {
+        //        result += JSON.stringify(error) + '<br />';
+        //        $show.html(result);
+        //    });
+
+        //});
+
+
+        $(document).ready(function () {
+            // JQuery
+            let $show = $('#show');
+            let url = 'https://localhost:44359/customer'
+            let result = '';
+            // Get
+            $.ajax({
+                type: 'GET',
+                url: url,
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON)  + '<br />';
+                   $show.html(result);
+                }
+            });
+             $.ajax({
+                type: 'GET',
+                url: url+ '/A54A',
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON) + '<br />';
+                   $show.html(result);
+                }
+             });
+
+            // Post
+             $.ajax({
+                type: 'POST',
+                url: url,
+                data:JSON.stringify({ Id: 'A54A', Name: 'changed', Location: 'changed' }),
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON) + '<br />';
+                   $show.html(result);
+                }
+            });
+
+             // Put
+             $.ajax({
+                type: 'PUT',
+                url: url+ '/A54A',
+                data:JSON.stringify({ Id: 'A54A', Name: 'changed', Location: 'changed' }),
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON) + '<br />';
+                   $show.html(result);
+                }
+             });
+
+             // Patch
+             $.ajax({
+                type: 'PATCH',
+                url: url+ '/A54A',
+                data:JSON.stringify({  Location: 'changed' }),
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON) + '<br />';
+                   $show.html(result);
+                }
+             });
+
+             // Delete
+             $.ajax({
+                type: 'DELETE',
+                url: url+ '/A54A',
+                contentType: 'application/json;',
+                success: function (response) {
+                     result += JSON.stringify(response) + '<br />';
+                     $show.html(result);
+                },
+                error: function (error) {
+                   result += JSON.stringify(error.responseJSON) + '<br />';
+                   $show.html(result);
+                }
+            });
+        });
+
+
+
+    </script>
+}
