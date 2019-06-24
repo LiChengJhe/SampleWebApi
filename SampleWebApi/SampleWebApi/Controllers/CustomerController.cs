@@ -21,7 +21,7 @@ namespace SampleWebApi.Controllers
                 };
 
 
-        [ HttpGet]
+        [HttpGet]
         public ActionResult<List<Customer>> GetCustomers()
         {
             return Ok(_Customers);

@@ -19,6 +19,7 @@ namespace SampleHttpClient
             this._Url = url;
             this._Client = new HttpClient();
         }
+
         public async Task<T> PostAsync<T>(T obj)
         {
             T result = default(T);
@@ -42,8 +43,6 @@ namespace SampleHttpClient
                     }
                     else throw new Exception("Web API Response Error");
                 }
-
-
             }
             catch
             {
